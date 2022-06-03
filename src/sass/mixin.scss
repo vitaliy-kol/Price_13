@@ -1,0 +1,63 @@
+@mixin logo_font_face {
+    font-family: 'AgencyFB';
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+@mixin main_menu_text {
+    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.2);
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@mixin cheked_item_main_menu {
+    background: $border_main_menu, $main_menu_cheked;
+    &+li a {
+        background: $main_menu_delimiter_left_double, $main_menu_delimiter_left;
+    }
+}
+
+@mixin AR_12 {
+    font-family: 'Arial';
+    font-size: 12px;
+    text-align: left;
+    color: #000;
+}
+
+@mixin main_menu_bd {
+    height: 34px;
+    display: block;
+    background-image: linear-gradient(to top, #0072bc, #0b96ca);
+    border-radius: 3px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+@mixin main_menu_bd_before {
+    &:before {
+        content: '';
+        width: 100%;
+        height: 7px;
+        display: block;
+        opacity: 0.9;
+        background-image: linear-gradient(to top, #00aeef, #00bff3);
+        border-radius: 3px 3px 0 0;
+    }
+}
+
+@mixin bd_arrow_left_color($color_1) {
+    background: linear-gradient( $color_1, $color_1) 1px 50%/ 10px 1px no-repeat, linear-gradient($color_1, $color_1) 2px 50%/ 1px 3px no-repeat;
+}
+
+@mixin bd_arrow_roght_color($color_2) {
+    background: linear-gradient( $color_2, $color_2) calc(100% - 1px) 50%/ 10px 1px no-repeat, linear-gradient($color_2, $color_2) calc(100% - 2px) 50%/ 1px 3px no-repeat;
+}

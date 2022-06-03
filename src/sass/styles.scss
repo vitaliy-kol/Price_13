@@ -1,0 +1,22 @@
+$main_menu_delimiter_left: linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 100% 100%/ 1px 34px no-repeat;
+$main_menu_delimiter_left_double: linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 0 100%/ 1px 34px no-repeat;
+$main_menu_delimiter_right: linear-gradient(to top, transparent 2px, rgb(118, 214, 244) 17px, rgb(118, 214, 244) 23px, transparent 32px) 0 100%/ 1px 34px no-repeat;
+$main_menu_cheked: linear-gradient(to top, #098dd9, #00bff3 37px);
+$border_main_menu: linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 0 100%/ 1px 37px no-repeat,
+linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 100% 100%/ 1px 37px no-repeat;
+$border_dotter_left: linear-gradient(black 1px, transparent 1px, transparent 5px, black 5px, black 6px, transparent 6px, transparent 10px, black 10px, black 11px, transparent 11px, transparent 15px, black 15px, black 16px, transparent 16px, transparent 20px, black 20px, black 21px) 0 18px/ 1px 21px no-repeat;
+$green_border: linear-gradient(to right, #1dd114, #1dd114 179px, transparent 179px, transparent 210px, #1dd114 210px, #1dd114 100%) 0 0/ 100% 1px no-repeat,
+linear-gradient(to top, #16b41e 0%, #1dd114 100%) 100% 0/ 1px 100% no-repeat,
+linear-gradient(to top, #16b41e 0%, #1dd114 100%) 0 0/ 1px 100% no-repeat,
+linear-gradient(to right, #16b41e, #16b41e) 0 100%/ 100% 1px no-repeat;
+$white_triangle: linear-gradient(to top, rgba(242, 242, 242, .5), white) 0 0/ 1px calc(100% - 8px) no-repeat,
+linear-gradient(to top, rgba(242, 242, 242, .5), white) 100% 0/ 1px calc(100% - 8px) no-repeat,
+linear-gradient(to right top, transparent, transparent 50%, #ebebeb 50%, #ebebeb) 20px calc(100% - 4px)/ 5px 5px no-repeat,
+linear-gradient(to right top, transparent, transparent 50%, white 50%, white) 18.5px calc(100% - 2px)/ 7px 7px no-repeat,
+linear-gradient(to right top, transparent, transparent 50%, #ebebeb 50%, #ebebeb) 18.5px 100%/ 8px 8px no-repeat,
+linear-gradient(#ebebeb, #ebebeb) 0 calc(100% - 7px)/ 100% 1px no-repeat,
+linear-gradient(to top, transparent, transparent 9px, #ebebeb 9px, #fff);
+$head_aticle_bottom_bd: linear-gradient(to right, rgb(181, 181, 181), rgb(181, 181, 181) 1px, transparent 1px, transparent 3px) 0 calc(100% - 3px)/ 3px 1px repeat-x;
+$footer_bd_arrow: linear-gradient(#848484, #848484) 3px calc(50% - 1px)/ 1px 1px no-repeat,
+linear-gradient(#848484, #848484) 4px 50%/ 1px 1px no-repeat,
+linear-gradient(#848484, #848484) 3px calc(50% + 1px)/ 1px 1px no-repeat;

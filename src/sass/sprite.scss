@@ -1,0 +1,123 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$finger-down-name: 'finger_down';
+$finger-down-x: 0px;
+$finger-down-y: 0px;
+$finger-down-offset-x: 0px;
+$finger-down-offset-y: 0px;
+$finger-down-width: 30px;
+$finger-down-height: 33px;
+$finger-down-total-width: 58px;
+$finger-down-total-height: 57px;
+$finger-down-image: 'sprite.png';
+$finger-down: (0px, 0px, 0px, 0px, 30px, 33px, 58px, 57px, 'sprite.png', 'finger_down', );
+$finger-up-name: 'finger_up';
+$finger-up-x: 30px;
+$finger-up-y: 0px;
+$finger-up-offset-x: -30px;
+$finger-up-offset-y: 0px;
+$finger-up-width: 28px;
+$finger-up-height: 33px;
+$finger-up-total-width: 58px;
+$finger-up-total-height: 57px;
+$finger-up-image: 'sprite.png';
+$finger-up: (30px, 0px, -30px, 0px, 28px, 33px, 58px, 57px, 'sprite.png', 'finger_up', );
+$origami-bird-name: 'origami_bird';
+$origami-bird-x: 0px;
+$origami-bird-y: 33px;
+$origami-bird-offset-x: 0px;
+$origami-bird-offset-y: -33px;
+$origami-bird-width: 28px;
+$origami-bird-height: 24px;
+$origami-bird-total-width: 58px;
+$origami-bird-total-height: 57px;
+$origami-bird-image: 'sprite.png';
+$origami-bird: (0px, 33px, 0px, -33px, 28px, 24px, 58px, 57px, 'sprite.png', 'origami_bird', );
+$shape-name: 'shape';
+$shape-x: 28px;
+$shape-y: 33px;
+$shape-offset-x: -28px;
+$shape-offset-y: -33px;
+$shape-width: 15px;
+$shape-height: 12px;
+$shape-total-width: 58px;
+$shape-total-height: 57px;
+$shape-image: 'sprite.png';
+$shape: (28px, 33px, -28px, -33px, 15px, 12px, 58px, 57px, 'sprite.png', 'shape', );
+$spritesheet-width: 58px;
+$spritesheet-height: 57px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($finger-down, $finger-up, $origami-bird, $shape, );
+$spritesheet: (58px, 57px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

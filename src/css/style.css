@@ -1,0 +1,747 @@
+@font-face {
+  font-family: "AgencyFB";
+  src: url(../../fonts/AgencyFB-Bold.ttf)
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url(../../fonts/MyriadPro-BlackCond.woff)
+}
+section {
+  width: 100%;
+  min-width: 1000px
+}
+section>div {
+  width: 1000px;
+  margin: 0 auto
+}
+a {
+  text-decoration: none;
+  cursor: pointer
+}
+.section_first {
+  background: url("../img_com/grass_bd.png") calc(50% + 440px) 0/159px 67px no-repeat,url("../img_com/cloud_bd.png") 50% 0/1200px 168px repeat-x
+}
+.section_first .logo_form {
+  position: relative;
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between
+}
+.section_first .logo_form div {
+  margin-left: -3px;
+  display: flex;
+  align-items: center;
+  justify-content: left
+}
+.section_first .logo_form div a {
+  display: inline-block;
+  font-family: "AgencyFB";
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000
+}
+.section_first .logo_form div a span {
+  margin-left: 4px;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 37px;
+  background-image: linear-gradient(to top, #ec1414, #f26c4f);
+  height: 37px;
+  border-radius: 0 5px 5px 0
+}
+.section_first .logo_form div a span:after {
+  position: absolute;
+  top: -4.5px;
+  left: 3px;
+  color: #fff;
+  content: "13"
+}
+.section_first .logo_form div>span {
+  margin: 0 0 5px 10px;
+  display: block;
+  font-family: "Arial";
+  font-style: italic;
+  font-size: 11px;
+  color: #7d7d7d;
+  width: 200px
+}
+.section_first .logo_form form {
+  margin-top: 4px;
+  position: relative
+}
+.section_first .logo_form form input[type=search] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 230px;
+  height: 38px;
+  border: 3px solid #b6b2b2;
+  border-radius: 25px;
+  padding: 10px 14px 9px 16px
+}
+.section_first .logo_form form input[type=search]:focus-visible {
+  outline: none
+}
+.section_first .logo_form form input[type=search]::placeholder {
+  font-family: "Arial";
+  font-size: 12px;
+  color: #b7b7b7
+}
+.section_first .logo_form form input[type=submit] {
+  position: absolute;
+  top: 13px;
+  right: 17px;
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  border: 0 solid #fff;
+  background-color: #fff;
+  background-image: url(sprite.png);
+  background-position: -28px -33px;
+  width: 15px;
+  height: 12px;
+  margin-left: -30px;
+  cursor: pointer
+}
+.section_first .main_menu {
+  margin: 20px auto 57px;
+  position: relative
+}
+.section_first .main_menu nav {
+  width: 100%;
+  height: 34px;
+  display: block;
+  background-image: linear-gradient(to top, #0072bc, #0b96ca);
+  border-radius: 3px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  font-size: 0;
+  text-align: center
+}
+.section_first .main_menu nav li {
+  display: inline-block;
+  background: linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 100% 100%/1px 34px no-repeat
+}
+.section_first .main_menu nav li a {
+  text-shadow: .5px .9px 0 rgba(0,0,0,.2);
+  font-family: Arial;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  padding: 9px 17px 12px
+}
+.section_first .main_menu nav li a:hover {
+  color: #fff200
+}
+.section_first .main_menu nav li+li {
+  background: linear-gradient(to top, transparent 2px, rgb(118, 214, 244) 17px, rgb(118, 214, 244) 23px, transparent 32px) 0 100%/1px 34px no-repeat,linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 100% 100%/1px 34px no-repeat
+}
+.section_first .main_menu nav li:last-child {
+  background: linear-gradient(to top, transparent 2px, rgb(118, 214, 244) 17px, rgb(118, 214, 244) 23px, transparent 32px) 0 100%/1px 34px no-repeat
+}
+.section_first .main_menu nav li.active {
+  background: linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 0 100%/1px 37px no-repeat,linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 100% 100%/1px 37px no-repeat,linear-gradient(to top, #098dd9, #00bff3 37px)
+}
+.section_first .main_menu nav li.active+li a {
+  background: linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 0 100%/1px 34px no-repeat,linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 100% 100%/1px 34px no-repeat
+}
+.section_first .main_menu nav li:focus {
+  background: linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 0 100%/1px 37px no-repeat,linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 100% 100%/1px 37px no-repeat,linear-gradient(to top, #098dd9, #00bff3 37px)
+}
+.section_first .main_menu nav li:focus+li a {
+  background: linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 0 100%/1px 34px no-repeat,linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 100% 100%/1px 34px no-repeat
+}
+.section_first .main_menu:before {
+  content: "";
+  width: 100%;
+  height: 7px;
+  display: block;
+  opacity: .9;
+  background-image: linear-gradient(to top, #00aeef, #00bff3);
+  border-radius: 3px 3px 0 0
+}
+.section_first .bilbord {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  min-width: 1000px;
+  min-height: 240px;
+  margin: 0
+}
+.section_first .bilbord:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img_com/main_bilbord.png") 50% 0/1026px 240px no-repeat,url("../img_com/city_bd.png") 120px 50%/1200px 97px repeat-x
+}
+.section_first .bilbord>div {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto
+}
+.section_first .bilbord>div>div div {
+  position: absolute;
+  display: block;
+  width: 450px;
+  top: 61px;
+  right: 63px
+}
+.section_first .bilbord>div>div div h2 {
+  text-shadow: .5px .9px 0 rgba(0,0,0,.5);
+  font-family: "MyriadPro";
+  font-size: 36px;
+  font-weight: 900;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase
+}
+.section_first .bilbord>div>div div p {
+  margin-top: 8px;
+  text-shadow: .5px .9px 0 rgba(0,0,0,.2);
+  font-family: Arial;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-transform: none;
+  text-align: left;
+  line-height: 1.5
+}
+.section_first .bilbord>div>div .carusel {
+  position: absolute;
+  top: 185px;
+  right: 20px;
+  font-size: 0
+}
+.section_first .bilbord>div>div .carusel li {
+  display: inline-block
+}
+.section_first .bilbord>div>div .carusel li a {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  opacity: .74;
+  background-color: #f3f3f3;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%);
+  box-shadow: inset 0px 2px 1px 0px rgba(0,0,0,.28)
+}
+.section_first .bilbord>div>div .carusel li a:hover {
+  background-color: #f54d4d;
+  opacity: 1
+}
+.section_first .bilbord>div>div .carusel li+li {
+  margin-left: 6px
+}
+.section_first .bilbord>div>div .carusel li.active a {
+  background-color: #f54d4d;
+  opacity: 1
+}
+.section_first div.reklam_ka {
+  padding-bottom: 13px;
+  background: linear-gradient(rgb(236, 236, 236), rgb(236, 236, 236)) 0 100%/100% 1px no-repeat,linear-gradient(white, white) 0 calc(100% - 1px)/100% 1px no-repeat,linear-gradient(to top, #ebebeb 2px, #fff);
+  margin: 0;
+  margin-top: 8px;
+  width: 100%;
+  min-width: 1000px
+}
+.section_first div.reklam_ka ul {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 0
+}
+.section_first div.reklam_ka ul li {
+  vertical-align: top;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 12px;
+  text-align: left;
+  color: #676767;
+  padding-right: 48px
+}
+.section_first div.reklam_ka ul li img {
+  margin-left: -6px;
+  float: left
+}
+.section_first div.reklam_ka ul li div {
+  float: right;
+  margin-left: 10px;
+  margin-top: 3px;
+  display: block;
+  width: 175px
+}
+.section_first div.reklam_ka ul li div a {
+  font-size: 14px;
+  border-bottom: 1px solid;
+  color: #0174bd
+}
+.section_first div.reklam_ka ul li div a:hover {
+  color: #fff200
+}
+.section_first div.reklam_ka ul li div p {
+  margin-top: 9px
+}
+.section_first div.reklam_ka ul li+li {
+  padding-left: 31px;
+  padding-right: 29px;
+  background: linear-gradient(black 1px, transparent 1px, transparent 5px, black 5px, black 6px, transparent 6px, transparent 10px, black 10px, black 11px, transparent 11px, transparent 15px, black 15px, black 16px, transparent 16px, transparent 20px, black 20px, black 21px) 0 18px/1px 21px no-repeat
+}
+.section_first div.reklam_ka ul li+li div {
+  width: 225px;
+  margin: 3px 0 0 12px
+}
+.section_first div.reklam_ka ul li+li img {
+  margin: -9px 0 0 0
+}
+.section_first div.reklam_ka ul li+li+li {
+  padding-right: 0
+}
+.section_first div.reklam_ka ul li+li+li div {
+  width: 175px;
+  margin: 3px 0 0 8px
+}
+.section_first div.reklam_ka ul li+li+li img {
+  margin: -16px 0 0 -3px
+}
+.section_second>div {
+  font-size: 0;
+  height: 100%;
+  margin-top: 24px
+}
+.section_second>div>div {
+  vertical-align: top;
+  display: inline-block
+}
+.section_second>div .white_store {
+  width: 222px
+}
+.section_second>div .white_store .button {
+  position: relative;
+  display: block;
+  padding: 13px 14px 12px;
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  text-decoration: underline;
+  color: #0c8a2d;
+  background: linear-gradient(white, white) 179px -1px/31px 1px no-repeat,linear-gradient(to top, #ebebeb 0%, #ffffff 100%) padding-box,linear-gradient(to top, #16b41e 0%, #1dd114 100%) border-box;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0)
+}
+.section_second>div .white_store .button:after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 182px;
+  width: 28px;
+  height: 33px;
+  background-image: url(sprite.png);
+  background-position: -30px 0px;
+  width: 28px;
+  height: 33px
+}
+.section_second>div .white_store .aticle {
+  display: block;
+  margin-top: 25px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding-bottom: 10px
+}
+.section_second>div .white_store .aticle>p {
+  position: relative;
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  font-size: 18px;
+  padding: 14px 13px 22px;
+  background: linear-gradient(to top, rgba(242, 242, 242, 0.5), white) 0 0/1px calc(100% - 8px) no-repeat,linear-gradient(to top, rgba(242, 242, 242, 0.5), white) 100% 0/1px calc(100% - 8px) no-repeat,linear-gradient(to right top, transparent, transparent 50%, #ebebeb 50%, #ebebeb) 20px calc(100% - 4px)/5px 5px no-repeat,linear-gradient(to right top, transparent, transparent 50%, white 50%, white) 18.5px calc(100% - 2px)/7px 7px no-repeat,linear-gradient(to right top, transparent, transparent 50%, #ebebeb 50%, #ebebeb) 18.5px 100%/8px 8px no-repeat,linear-gradient(#ebebeb, #ebebeb) 0 calc(100% - 7px)/100% 1px no-repeat,linear-gradient(to top, transparent, transparent 9px, #ebebeb 9px, #fff)
+}
+.section_second>div .white_store .aticle ul {
+  font-size: 0
+}
+.section_second>div .white_store .aticle ul li {
+  position: relative;
+  display: inline-block;
+  width: 176px;
+  margin: 10px 0 7px 30px
+}
+.section_second>div .white_store .aticle ul li a {
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  color: #0686c4;
+  text-decoration: underline
+}
+.section_second>div .white_store .aticle ul li a:hover {
+  color: #ed1c24
+}
+.section_second>div .white_store .aticle ul li:before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 4px;
+  left: -19px;
+  background: rgba(0,0,0,0);
+  box-shadow: 1px 1px 0 red,2px 2px 0 #fff,3px 3px 0 red;
+  transform: rotate(-45deg)
+}
+.section_second>div .white_store .sites_left {
+  display: block;
+  margin-top: 25px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px
+}
+.section_second>div .head_aticle {
+  margin: 0 25.5px;
+  width: 502px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px
+}
+.section_second>div .head_aticle>p {
+  position: relative;
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  font-size: 18px;
+  padding: 14px 13px 22px;
+  background: linear-gradient(to top, rgba(242, 242, 242, 0.5), white) 0 0/1px calc(100% - 8px) no-repeat,linear-gradient(to top, rgba(242, 242, 242, 0.5), white) 100% 0/1px calc(100% - 8px) no-repeat,linear-gradient(to right top, transparent, transparent 50%, #ebebeb 50%, #ebebeb) 20px calc(100% - 4px)/5px 5px no-repeat,linear-gradient(to right top, transparent, transparent 50%, white 50%, white) 18.5px calc(100% - 2px)/7px 7px no-repeat,linear-gradient(to right top, transparent, transparent 50%, #ebebeb 50%, #ebebeb) 18.5px 100%/8px 8px no-repeat,linear-gradient(#ebebeb, #ebebeb) 0 calc(100% - 7px)/100% 1px no-repeat,linear-gradient(to top, transparent, transparent 9px, #ebebeb 9px, #fff)
+}
+.section_second>div .head_aticle>ul.head_aticle_text {
+  margin: 0 13px
+}
+.section_second>div .head_aticle>ul.head_aticle_text li {
+  display: inline-block;
+  margin-top: 14px;
+  padding-bottom: 38.5px;
+  padding-right: 26px;
+  background: linear-gradient(to right, rgb(181, 181, 181), rgb(181, 181, 181) 1px, transparent 1px, transparent 3px) 0 calc(100% - 3px)/3px 1px repeat-x
+}
+.section_second>div .head_aticle>ul.head_aticle_text li:after {
+  content: "";
+  width: 100%;
+  height: 0
+}
+.section_second>div .head_aticle>ul.head_aticle_text li img {
+  width: 177px;
+  float: left;
+  margin-right: 15px
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div {
+  margin-top: -2px;
+  float: right;
+  line-height: 1.14;
+  width: 255px
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>a {
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  color: #0174bd;
+  font-size: 14px;
+  text-decoration: underline
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>a:hover {
+  color: #f14950;
+  text-decoration: none
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>a+div {
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  color: #959595;
+  margin-top: 13px;
+  margin-left: 2px
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>a+div>a {
+  text-decoration: underline;
+  color: #959595
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>a+div>a:hover {
+  text-decoration: none
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>p {
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  color: #3b3b3b;
+  margin-top: 11px;
+  margin-left: 2px
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>p+div {
+  margin-top: 14px
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>p+div>div {
+  position: relative;
+  display: inline-block;
+  width: 101px
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>p+div>div a {
+  display: block;
+  width: 100%;
+  height: 34px;
+  display: block;
+  background-image: linear-gradient(to top, #0072bc, #0b96ca);
+  border-radius: 3px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  font-size: 0;
+  text-align: center;
+  text-shadow: .5px .9px 0 rgba(0,0,0,.2);
+  font-family: Arial;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 0 5px;
+  height: auto;
+  text-transform: none
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>p+div>div a:hover {
+  top: 0;
+  padding-top: 9px;
+  background: linear-gradient(to top, #088cd7, #02b5ec)
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>p+div>div:before {
+  content: "";
+  width: 100%;
+  height: 7px;
+  display: block;
+  opacity: .9;
+  background-image: linear-gradient(to top, #00aeef, #00bff3);
+  border-radius: 3px 3px 0 0
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>p+div>span {
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  color: #959595;
+  position: absolute;
+  height: auto;
+  vertical-align: middle;
+  margin-top: 2px;
+  margin-left: 71px
+}
+.section_second>div .head_aticle>ul.head_aticle_text li>div>p+div>span span {
+  font-family: Georgia;
+  font-size: 18px;
+  color: #0583c3;
+  margin-left: 5px
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land {
+  margin: 18px 13px 26px
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li {
+  display: inline-block
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li a {
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  border-bottom: 1px solid #000
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li a:hover {
+  color: #ed1c24;
+  border-bottom: 0 solid #000
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li+li {
+  margin-right: 16px
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li+li.active {
+  margin-right: 17px
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li+li.active a {
+  font-size: 18px;
+  color: #0a87d9;
+  border-bottom: 0 solid #000
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li:first-child a,
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li:last-child a {
+  font-size: 18px
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li:first-child {
+  padding-left: 19px;
+  margin-right: 48px;
+  background: linear-gradient(black, black) 1px 50%/10px 1px no-repeat,linear-gradient(black, black) 2px 50%/1px 3px no-repeat
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li:first-child:hover {
+  background: linear-gradient(#f46f19, #f46f19) 1px 50%/10px 1px no-repeat,linear-gradient(#f46f19, #f46f19) 2px 50%/1px 3px no-repeat
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li:last-child {
+  padding-right: 18px;
+  margin-left: 40px;
+  margin-right: 0;
+  background: linear-gradient(black, black) calc(100% - 1px) 50%/10px 1px no-repeat,linear-gradient(black, black) calc(100% - 2px) 50%/1px 3px no-repeat
+}
+.section_second>div .head_aticle>ul.head_aticle_text+ul.number_land li:last-child:hover {
+  background: linear-gradient(#f46f19, #f46f19) calc(100% - 1px) 50%/10px 1px no-repeat,linear-gradient(#f46f19, #f46f19) calc(100% - 2px) 50%/1px 3px no-repeat
+}
+.section_second>div .black_store {
+  width: 222px
+}
+.section_second>div .black_store>a.button {
+  position: relative;
+  display: block;
+  padding: 13px 14px 12px;
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  text-decoration: underline;
+  color: #e31b3b;
+  background: linear-gradient(white, white) 179px -1px/31px 1px no-repeat,linear-gradient(to top, #ebebeb 0%, #ffffff 100%) padding-box,linear-gradient(to top, #d80e21, #f7131c) border-box;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0)
+}
+.section_second>div .black_store>a.button:after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 177px;
+  width: 28px;
+  height: 33px;
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 30px;
+  height: 33px
+}
+.section_third .footer_menu {
+  margin: 28px auto 48px;
+  position: relative
+}
+.section_third .footer_menu nav {
+  width: 100%;
+  height: 34px;
+  display: block;
+  background-image: linear-gradient(to top, #0072bc, #0b96ca);
+  border-radius: 3px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  font-size: 0;
+  text-align: center
+}
+.section_third .footer_menu nav li {
+  display: inline-block;
+  background: linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 100% 100%/1px 34px no-repeat
+}
+.section_third .footer_menu nav li a {
+  text-shadow: .5px .9px 0 rgba(0,0,0,.2);
+  font-family: Arial;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  padding: 9px 17px 12px
+}
+.section_third .footer_menu nav li a:hover {
+  color: #fff200
+}
+.section_third .footer_menu nav li+li {
+  background: linear-gradient(to top, transparent 2px, rgb(118, 214, 244) 17px, rgb(118, 214, 244) 23px, transparent 32px) 0 100%/1px 34px no-repeat,linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 100% 100%/1px 34px no-repeat
+}
+.section_third .footer_menu nav li:last-child {
+  background: linear-gradient(to top, transparent 2px, rgb(118, 214, 244) 17px, rgb(118, 214, 244) 23px, transparent 32px) 0 100%/1px 34px no-repeat
+}
+.section_third .footer_menu nav li.active {
+  background: linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 0 100%/1px 37px no-repeat,linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 100% 100%/1px 37px no-repeat,linear-gradient(to top, #098dd9, #00bff3 37px)
+}
+.section_third .footer_menu nav li.active+li a {
+  background: linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 0 100%/1px 34px no-repeat,linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 100% 100%/1px 34px no-repeat
+}
+.section_third .footer_menu nav li:focus {
+  background: linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 0 100%/1px 37px no-repeat,linear-gradient(to top, #098dd9, rgb(4, 170, 231) 15px, #00bff3 37px) 100% 100%/1px 37px no-repeat,linear-gradient(to top, #098dd9, #00bff3 37px)
+}
+.section_third .footer_menu nav li:focus+li a {
+  background: linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 0 100%/1px 34px no-repeat,linear-gradient(to top, transparent 2px, rgb(0, 114, 188) 17px, rgb(0, 114, 188) 23px, transparent 32px) 100% 100%/1px 34px no-repeat
+}
+.section_third .footer_menu:before {
+  content: "";
+  width: 100%;
+  height: 7px;
+  display: block;
+  opacity: .9;
+  background-image: linear-gradient(to top, #00aeef, #00bff3);
+  border-radius: 3px 3px 0 0
+}
+.section_third .footer_contact {
+  margin-top: 22px;
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  line-height: 1.5;
+  color: #848484
+}
+.section_third .footer_contact a {
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+  line-height: 1.5;
+  color: #848484
+}
+.section_third .footer_contact>div {
+  display: inline-block;
+  width: 445px
+}
+.section_third .footer_contact>div+div {
+  margin-left: 48px;
+  width: 100px
+}
+.section_third .footer_contact>div+div>a {
+  display: block;
+  padding-left: 10px;
+  background: linear-gradient(#848484, #848484) 3px calc(50% - 1px)/1px 1px no-repeat,linear-gradient(#848484, #848484) 4px 50%/1px 1px no-repeat,linear-gradient(#848484, #848484) 3px calc(50% + 1px)/1px 1px no-repeat;
+  line-height: 1.5;
+  text-decoration: underline
+}
+.section_third .footer_contact>div+div>a:hover {
+  text-decoration: none
+}
+.section_third .footer_contact>div+div+div {
+  margin-left: 196px;
+  padding-right: 40px;
+  width: 160px;
+  text-align: right
+}
+.section_third .footer_contact>div+div+div a {
+  position: relative;
+  border-bottom: 1px solid #848484
+}
+.section_third .footer_contact>div+div+div a:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: -41px;
+  display: block;
+  width: 28px;
+  height: 24px;
+  background-image: url(sprite.png);
+  background-position: 0px -33px;
+  width: 28px;
+  height: 24px
+}
+.section_third .footer_contact>div+div+div a:hover {
+  border-bottom: 1px solid rgba(0,0,0,0)
+}
